@@ -1,16 +1,22 @@
-# agric
+# Agriculture Ecommerce Mobile App UI
 
-A new Flutter project.
+Welcome to our Agriculture Ecommerce mobile application UI project! This project aims to provide a seamless and intuitive user interface for buying and selling agricultural products. The app allows farmers and buyers to connect, explore products, and make transactions easily.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **User Authentication:** Secure user login and registration system.
+- **Product Listings:** Browse a wide range of agricultural products with detailed descriptions.
+- **Search and Filters:** Easily find products using search and filter options.
+- **Cart and Checkout:** Add products to the cart and proceed to a smooth checkout process.
+- **Product Details:** View detailed information about each product, including images, prices, and descriptions.
+- **Order History:** Keep track of past orders and transactions.
+- **User Profiles:** Personalized profiles for users and sellers.
+- **Notifications:** Receive updates on orders, new products, and promotions.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## UI Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Explore Page](screenshots/home.png)
+*Caption for Screenshot 1*
+
+Happy farming and happy coding! 🌾🚜
