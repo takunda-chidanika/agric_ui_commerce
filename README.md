@@ -40,4 +40,5 @@ Welcome to our Agriculture Ecommerce mobile application UI project! This project
 
 ![Order Page](screenshots/orders.png)
 *Order Page*
-Happy farming and happy coding! 🌾🚜
+
+**Happy farming and happy coding!** 🌾🚜
