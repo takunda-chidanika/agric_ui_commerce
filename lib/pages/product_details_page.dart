@@ -1,6 +1,5 @@
 import 'package:agric/data/products.dart';
 import 'package:agric/models/product.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
@@ -175,18 +174,18 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
           SizedBox(
             height: 90,
             child: ListView.separated(
-              physics: const BouncingScrollPhysics(),
+                physics: const BouncingScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
                     height: 90,
                     width: 80,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(8),
                         image: DecorationImage(
-                      image: AssetImage(products[index].image),
-                      fit: BoxFit.cover,
-                    )),
+                          image: AssetImage(products[index].image),
+                          fit: BoxFit.cover,
+                        )),
                   );
                 },
                 separatorBuilder: (context, index) => const SizedBox(
@@ -194,8 +193,14 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                     ),
                 itemCount: products.length),
           ),
-          const SizedBox(height: 20,),
-          FilledButton.icon(onPressed: (){}, label: const Text("Add To Cart"), icon: const Icon(IconlyLight.bag),)
+          const SizedBox(
+            height: 20,
+          ),
+          FilledButton.icon(
+            onPressed: () {},
+            label: const Text("Add To Cart"),
+            icon: const Icon(IconlyLight.bag),
+          )
         ],
       ),
     );

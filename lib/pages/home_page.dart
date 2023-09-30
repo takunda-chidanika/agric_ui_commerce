@@ -2,10 +2,9 @@ import 'package:agric/pages/cart_page.dart';
 import 'package:agric/pages/explore_page.dart';
 import 'package:agric/pages/profile_page.dart';
 import 'package:agric/pages/services_page.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:badges/badges.dart' as badges;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -67,7 +66,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
         type: BottomNavigationBarType.fixed,
-        onTap: (index){
+        onTap: (index) {
           setState(() {
             currentIndex = index;
           });
@@ -75,11 +74,11 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(
               icon: Icon(IconlyLight.home),
-              activeIcon:Icon(IconlyBold.home) ,
+              activeIcon: Icon(IconlyBold.home),
               label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(IconlyLight.call),
-              activeIcon:  Icon(IconlyBold.call),
+              activeIcon: Icon(IconlyBold.call),
               label: "Services"),
           BottomNavigationBarItem(
               icon: Icon(IconlyLight.buy),

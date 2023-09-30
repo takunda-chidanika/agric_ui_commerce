@@ -1,7 +1,6 @@
 import 'dart:ui';
 
 import 'package:agric/data/services.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ServicesPage extends StatelessWidget {
@@ -44,9 +43,10 @@ class ServicesPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.white.withOpacity(0.2),
                   ),
-                  child: Text(service.name, style: const TextStyle(
-                    color: Colors.white, fontSize: 16
-                  ),),
+                  child: Text(
+                    service.name,
+                    style: const TextStyle(color: Colors.white, fontSize: 16),
+                  ),
                 ),
               ),
             ),

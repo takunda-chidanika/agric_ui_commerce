@@ -17,7 +17,7 @@ Welcome to our Agriculture Ecommerce mobile application UI project! This project
 ## UI Screenshots
 
 ![Welcome Page](screenshots/welcome.png)
-*Home/ Explore Page*
+*Welcome Page*
 
 
 ![Explore Page](screenshots/home.png)
@@ -35,4 +35,9 @@ Welcome to our Agriculture Ecommerce mobile application UI project! This project
 ![Cart Page](screenshots/cart.png)
 *Cart Page*
 
+![Profile Page](screenshots/profile.png)
+*Profile Page*
+
+![Order Page](screenshots/orders.png)
+*Order Page*
 Happy farming and happy coding! 🌾🚜

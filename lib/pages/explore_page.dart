@@ -1,6 +1,5 @@
 import 'package:agric/data/products.dart';
 import 'package:agric/widgets/product_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 
@@ -112,7 +111,9 @@ class ExplorePage extends StatelessWidget {
               childAspectRatio: 0.8,
             ),
             itemBuilder: (context, index) {
-              return ProductCard(product: products[index],);
+              return ProductCard(
+                product: products[index],
+              );
             },
           ),
         ],
