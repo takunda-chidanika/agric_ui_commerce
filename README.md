@@ -41,4 +41,10 @@ Welcome to our Agriculture Ecommerce mobile application UI project! This project
 ![Order Page](screenshots/orders.png)
 *Order Page*
 
+![Order Details Page](screenshots/order-details.png)
+
+![View Order Details](screenshots/view-all.png)
+
+*Order Details*
+
 **Happy farming and happy coding!** 🌾🚜

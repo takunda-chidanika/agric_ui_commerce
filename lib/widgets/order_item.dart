@@ -5,13 +5,13 @@ import 'package:flutter_iconly/flutter_iconly.dart';
 
 class OrderItem extends StatelessWidget {
   final Order order;
-
-  const OrderItem({super.key, required this.order});
+final int visibleProducts;
+  const OrderItem({super.key, required this.order, this.visibleProducts = 2});
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final product = order.products.take(2).toList();
+    final product = order.products.take(visibleProducts).toList();
     final totalPrice = order.products
         .fold(0.00, (previousValue, element) => previousValue + element.price);
 
@@ -56,32 +56,31 @@ class OrderItem extends StatelessWidget {
                 );
               },
             ),
-            if (order.products.length > 1)
-              const SizedBox(
-                height: 20,
-              ),
-            if (order.products.length > 1)
-              TextButton.icon(
-                onPressed: () {
-                  showModalBottomSheet(
-                    showDragHandle: true,
-                      context: context,
-                      isScrollControlled: true,
-                      builder: (context) {
-                        return SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.5,
-                          child: ListView.builder(
-                              itemCount: order.products.length,
-                              padding: const EdgeInsets.all(14),
-                              itemBuilder: (context, index){
-                            final product = order.products[index];
-                            return OrderProduct(order: order, product: product);
-                          }),
-                        );
-                      });
-                },
-                icon: const Icon(IconlyBold.arrowRight),
-                label: const Text("View All"),
+            if (order.products.length > 2)
+              Padding(
+                padding: const EdgeInsets.only(top: 10.0),
+                child: TextButton.icon(
+                  onPressed: () {
+                    showModalBottomSheet(
+                      showDragHandle: true,
+                        context: context,
+                        isScrollControlled: true,
+                        builder: (context) {
+                          return SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.5,
+                            child: ListView.builder(
+                                itemCount: order.products.length,
+                                padding: const EdgeInsets.all(14),
+                                itemBuilder: (context, index){
+                              final product = order.products[index];
+                              return OrderProduct(order: order, product: product);
+                            }),
+                          );
+                        });
+                  },
+                  icon: const Icon(IconlyBold.arrowRight),
+                  label: const Text("View All"),
+                ),
               )
           ],
         ),
